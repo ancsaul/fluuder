@@ -1,27 +1,27 @@
 import 'package:donut_app_2b/utils/my_tab.dart';
 import 'package:flutter/material.dart';
- 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
- 
+
   @override
   State<HomePage> createState() => _HomePageState();
 }
- 
+
 class _HomePageState extends State<HomePage> {
-  //lista de tabs
+  //Lista de Tabs
   List<Widget> myTabs = [
+    //DonutTab
     MyTab(iconPath: 'lib/icons/donut.png'),
-
+    //BurguertTab
     MyTab(iconPath: 'lib/icons/burger.png'),
-
+    //SmoothieTab
     MyTab(iconPath: 'lib/icons/smoothie.png'),
-
+    //PancakeTab
     MyTab(iconPath: 'lib/icons/pancakes.png'),
-
+    //PizzatTab
     MyTab(iconPath: 'lib/icons/pizza.png'),
-    
-    ];
+  ];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           // icono izquierdo
           leading: Icon(
             Icons.menu,
-            color: Colors.pinkAccent[800],
+            color: Colors.pinkAccent[200],
           ),
           // Icono derecho
           actions: [Padding(
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 18),
               child: Row(
                 children: [
-                  Text("I want to", style: TextStyle(
+                  Text("I want to ", style: TextStyle(
                     fontSize: 32 )),
                   Text("Eat",style: TextStyle(
                     //Tamaño de letra
@@ -57,17 +57,17 @@ class _HomePageState extends State<HomePage> {
                     //Subrayado
                     decoration: TextDecoration.underline,
                     //Color de letra
-                    color: Colors.pinkAccent[800]  
+                    color: Colors.pinkAccent[200]  
                     ) )
                 ],
               ),
-            )
-       
+            ),
           //TabBar
-          TabBar(tabs: myTabs)
+          TabBar(tabs: myTabs),
+      
           //TabBarView
-       
-          //carrito
+      
+          //Carrito
           ] )
       ),
     );
