@@ -10,12 +10,13 @@ class MyTab extends StatelessWidget {
       height: 50,
       child: Container(
         padding: const EdgeInsets.all(8),
-        //bordes redondeados
+        //Bordes redondeados
         decoration: BoxDecoration(
-          borderRadius: BorderRadiusDirectional.circular(16),
-          color: Colors.blueGrey[200]
+          borderRadius: BorderRadius.circular(16),
+          color: Colors.pink[100]
         ),
-        child: Image.asset(iconPath, color: Colors.pink[600],) ,),
+        child: Image.asset(iconPath, color: Colors.pink[400]),
+      )
     );
   }
 }
