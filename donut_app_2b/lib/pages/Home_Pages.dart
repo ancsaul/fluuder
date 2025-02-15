@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   //Lista de Tabs
   List<Widget> myTabs = [
     //DonutTab
-    MyTab(iconPath: 'lib/icons/donut.png'),
+    MyTab(iconPath: 'lib/icons/icons/donut.png'),
     //BurguertTab
     MyTab(iconPath: 'lib/icons/burger.png'),
     //SmoothieTab
