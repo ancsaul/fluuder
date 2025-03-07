@@ -15,7 +15,7 @@ class MyTab extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           color: Colors.pink[100]
         ),
-        child: Image.asset(iconPath, color: Colors.pink[400]),
+        child: Image.asset(iconPath, color: Colors.blueGrey[400]),
       )
     );
   }
