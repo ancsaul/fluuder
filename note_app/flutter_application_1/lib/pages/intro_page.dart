@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/home_page.dart';
+
+// import 'package:tu_app/homepage.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -12,75 +15,71 @@ class IntroPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          
-            //logo
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: Image.asset(
-                'lib/images/chocolate_donut.png',
-                height: 240,),
-            ),
-          
-            const SizedBox(height: 48,),
-          
-            //tittle
-          
-            const Text(
-              'just do It',
-              style: TextStyle(
-                fontWeight: FontWeight.bold, fontSize: 20,
-          
-              ),
-            ),
-          
-            const SizedBox(height: 24,),
-          
-            //sub tittle
-            const Text(
-              'brand new sneakers and coustoms kicks made with premium quality',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.grey,
-              ),
-              textAlign: TextAlign.center,
-            ),
-
-             const SizedBox(height: 24,),
-
-          
-            // star now button
-            GestureDetector(
-              onTap: () => Navigator.push(
-                context,
-                 MaterialPageRoute(
-                  builder: (context) => Homepage(),
+            children: [
+              // Logo
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Image.asset(
+                  'lib/images/chocolate_donut.png',
+                  height: 240,
                 ),
               ),
 
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[900],
-                  borderRadius: BorderRadius.circular(12),
+              const SizedBox(height: 48),
+
+              // Title
+              const Text(
+                'just do It',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
                 ),
-                padding: const EdgeInsets.all(25),
-                child: const Center(
-                  child: Text(
-                    'Shop now',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
+              ),
+
+              const SizedBox(height: 24),
+
+              // Subtitle
+              const Text(
+                'brand new sneakers and custom kicks made with premium quality',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey,
+                ),
+                textAlign: TextAlign.center,
+              ),
+
+              const SizedBox(height: 24),
+
+              // Start Now Button
+              GestureDetector(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const  HomePage(), // Verifica que Homepage exista
+                  ),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[900],
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.all(25),
+                  child: const Center(
+                    child: Text(
+                      'Shop now',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
-
               ),
-            ),
-        
-          ],
-                ),
+            ],
+          ),
         ),
+      ),
     );
   }
-} 
+}

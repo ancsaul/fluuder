@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/bottom_nav_bar.dart';
 
 
-class HomaPage extends StatefulWidget {
-  const HomaPage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<HomaPage> createState() => _HomaPageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomaPageState extends State<HomaPage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
