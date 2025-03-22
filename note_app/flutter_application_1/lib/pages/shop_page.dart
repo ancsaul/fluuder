@@ -1,4 +1,9 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/cart.dart';
+import 'package:flutter_application_1/models/shoe.dart';
+import 'package:provider/provider.dart';
 
 import '../components/shoe_tile.dart';
 
@@ -10,9 +15,23 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+  
+  //add shoe to cart
+  void addShoeToCart(Shoe Shoe) {
+    Provider.of<Cart>(context, listen: false).addItemToCart(Shoe);
+
+    //alert the user , shoes  successfully added
+    showDialog(context: context, builder: (context) => AlertDialog(
+      title: Text('successfully added¡'),
+      content: Text('check your cart'),
+    ),
+    );
+  }
+///minuto 2:16 del video 
+
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Consumer<Cart>(builder: (context, value, child)=> Column(
       children: [
         //searhc bar
         Container(
@@ -72,14 +91,33 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
         const SizedBox(height: 10),
+
+
+        //list of shoes for sale
         Expanded(
           child: ListView.builder(
+            itemCount: 4,
+            scrollDirection: Axis.horizontal,
             itemBuilder: (context, index){
-              return ShoeTile();
+              //get a  shoefrom a sho list
+              Shoe shoe = value.getShoeList()[index];
+              //return the shoe 
+              return ShoeTile(
+                shoe: shoe,
+                onTap: () => addShoeToCart(shoe),
+              );
             },
-          ))
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.only(top: 25.0, left: 25, right: 25),
+          child: Divider(
+            color: Colors.white,
+          ),
+        ),
 
       ],
+    ),
     );
   }
 }
