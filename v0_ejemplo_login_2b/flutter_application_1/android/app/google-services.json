@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "460460887127",
+    "project_id": "marzo-albert-2b",
+    "storage_bucket": "marzo-albert-2b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460460887127:android:9c036e84d93183495be712",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460460887127-6ht5839iqo81g8rjm7ogelrmpe6uthlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAstI_8THn_K48NCmRM6JXA0PXTN44kGqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460460887127-6ht5839iqo81g8rjm7ogelrmpe6uthlg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460460887127-fbelqjdei99u5mi68onh9e2llavd2jio.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marzoalbert2b.tutorialfirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460460887127:android:9eb7fcede1f0f0e35be712",
+        "android_client_info": {
+          "package_name": "com.marzoalbert2b.tutorialfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460460887127-6ht5839iqo81g8rjm7ogelrmpe6uthlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAstI_8THn_K48NCmRM6JXA0PXTN44kGqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460460887127-6ht5839iqo81g8rjm7ogelrmpe6uthlg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460460887127-fbelqjdei99u5mi68onh9e2llavd2jio.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marzoalbert2b.tutorialfirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
